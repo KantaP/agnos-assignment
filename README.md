@@ -7,15 +7,39 @@ two main interfaces:
 
 ## List of contents
 - [Installation](#Installation)
-- [Structure](#Structure)
 - [Usage](#Usage)
+- [Routes](#Routes)
+- [Project Structure](#Project-Structure)
+- [Realtime Flow](#Realtime-Flow)
+- [Screenshot](#Screenshot)
 
 ## Installation 
 ```bash
 npm install
 ```
 
-## Structure 
+## Usage
+start server 
+  ```bash 
+  npm run ws
+  ```
+run dev 
+  ```bash 
+  npm run dev
+  ```
+build for production 
+  ```bash 
+  npm run build
+  ```
+
+## Routes
+### patient/
+patient form page
+
+### staff/
+staff view page
+
+## Project Structure 
 
 ### app/
 React component of each pages 
@@ -35,16 +59,10 @@ Interfaces of any component props or state
 ### server
 Websocket server
 
-## Usage
-start server 
-  ```bash 
-  npm run ws
-  ```
-run dev 
-  ```bash 
-  npm run dev
-  ```
-build for production 
-  ```bash 
-  npm run build
-  ```
+## Realtime Flow
+Both of them sync data realtime by using websocket send and receive data.
+
+## Screenshot
+![Patient Form](example/screens/patient-form.png)
+![Staff View](example/screens/staff-view.png)
+
