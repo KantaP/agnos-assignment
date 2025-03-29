@@ -38,7 +38,7 @@ Websocket server
 ## Usage
 start server 
   ```bash 
-  node .\websocket-server.js
+  npm run ws
   ```
 run dev 
   ```bash 

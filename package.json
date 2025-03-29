@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "next-ws patch",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ws" : "node ./server/websocket-server.js"
   },
   "dependencies": {
     "next": "15.2.4",
