@@ -24,7 +24,7 @@ const StaffViewContainer = () => {
     const websocketRef = useRef<WebSocket | null>(null);
 
     useEffect(() => {
-        websocketRef.current = new WebSocket(`ws://${window.location.hostname}:8081`);
+        websocketRef.current = new WebSocket(`ws://strawberry-crisp-13842-c5e2b31e4c93.herokuapp.com`);
 
         websocketRef.current.onopen = () => {
             console.log('WebSocket connection opened');
