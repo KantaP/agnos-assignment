@@ -2,12 +2,15 @@
   "name": "patient-form",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "npm run ws",
+    "start": "node ./server/websocket-server.js",
     "lint": "next lint",
-    "ws" : "node ./server/websocket-server.js"
+    "ws": "node ./server/websocket-server.js"
   },
   "dependencies": {
     "next": "15.2.4",
